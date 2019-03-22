@@ -1,0 +1,6 @@
+version: 0.1
+
+phases:
+  build:
+    commands:
+      - aws s3 sync --exact-timestamps --delete rc s3://hapitas-rc-static-hosting
